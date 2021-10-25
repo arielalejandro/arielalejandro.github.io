@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hoja-estilo.css">
+    <title>Autos de Ferrari</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Crete+Round:ital@0;1&family=Prompt&family=Rubik&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="Imagenes/icons8-wheel-64.png">
+    <script src="https://kit.fontawesome.com/74ec56e05c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h2 class="titulo">Autos de Ferrari</h2><br>
+        <p class="subTitulo">Todo sobre la Scuderia</p>
+    </header>
+    <nav>
+        <!-- <ul class="vacio">
+            <li><a class="navbar__button" href="index.html">Inicio</a></li>
+            <li><a class="navbar__button" href="modelos.html" target="_blank">Modelos</a></li>
+            <li><a class="navbar__button" href="historia.html" target="_blank">Historia</a></li>
+        </ul> -->
+        <a class="navbar__button" href="index.html">Inicio</a>
+        <a class="navbar__button" href="modelos.html" target="_blank">Modelos</a>
+        <a class="navbar__button" href="historia.html" target="_blank">Historia</a>
+    </nav>
+    <main class="main_principal">
+        <section class="primer-parallax">
+        </section>
+        <section>
+            <article class="cartel_bienvenida">
+                <h3 class="bienvenida">¡Bienvenido!</h3><br>
+                <p class="bienvenida">En esta página podrá encontrar información sobre modelos e historia de Ferrari</p>
+            </article>
+        </section>
+        <section class="segundo-parallax">
+        </section>
+    </main>
+    <footer>
+        <section class="formulario__registro">
+            <h5 class="subTitulo__registro">Registrarse</h5>
+            <form name="formulario" action="exito.html" onsubmit="return validacion();">
+                <input type="text" id="nombre" placeholder="Nombre" required> &nbsp;
+                <input type="text" id="apellido" placeholder="Apellido" required><br><br>
+                <input type="email" id="email" placeholder="Correo Electronico">&nbsp;
+                <input type="submit" value="Enviar" />&nbsp;<input type="reset" value="Cancelar" />
+            </form>
+        </section>
+        <section class="redes">
+            <a href="" class="icono-red"><i class="fab fa-facebook"></i></a>
+            <a href="" class="icono-red"><i class="fab fa-twitter"></i></a>
+            <a href="" class="icono-red"><i class="fab fa-github"></i></a>
+            <a href="" class="icono-red"><i class="fab fa-instagram"></i></a>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Crete Round';
+}
+:root{
+    font-size: 16px;
+}
+/* fuentes{
+    font-family: 'Arvo', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Crete Round', serif;
+    font-family: 'Prompt', sans-serif;
+} */
+main, header, nav, footer
+{
+	display:block;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(243, 23, 47);
+    justify-content: center;
+}
+.titulo{
+    align-self: center;
+    font-size: 2.5vw;
+}
+.subTitulo{
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+/*           NAV         */
+nav{
+    display: flex;
+    width: 100vw;
+    /* background-color: rgb(191, 187, 194); */
+    background-color: rgb(32, 28, 26);
+    justify-content: space-evenly;
+    box-shadow: 0 4px 4px dimgray;
+    z-index: 5;
+}
+.navbar__button{
+    font-size: 1.5rem;
+    color: gainsboro;
+    /* background-color:gainsboro; */
+    padding: 0 20px;
+}
+li{
+    margin-inline: 5rem;
+}
+/* .vacio{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+a{
+    text-decoration: none;  
+}
+nav a:active{color: rgb(243, 23, 47)}
+nav a:hover{color:lightsalmon}
+
+
+/*          MAIN          */
+main{
+    min-height: 50%;
+    flex-grow: 1;
+}
+.main_principal{
+    flex-grow: 1;
+    /* background-image: url(imagenes/enzo.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#main__historia{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1 rem;
+}
+.primer-parallax{
+    width: 100vw;
+    height: 72vh;
+    background-image: url(imagenes/enzo.webp);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.segundo-parallax{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Imagenes/imagen-ferrari-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#historia{
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    flex-grow: 1;
+    margin: 1rem;
+    max-width: 80vw;
+}
+
+/*        FOOTER         */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-self: flex-end;
+    background-color: rgb(32, 28, 26);
+    width: 100vw;
+    height: 150px;
+}
+
+aside{
+    box-sizing: border-box;
+    width: 20vw;
+    background-color: black;
+    margin: 1rem;
+}
+
+p{
+    font-size: 1.2rem;
+    text-align: left;
+    font-family: Rubik;
+}
+h4{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.subTitulo__registro{
+    color: white;
+    font-family: Rubik;
+    font-size: 1.1rem;
+}
+
+.formulario__registro{
+    display: flex;
+    /* align-self: center; */
+    flex-direction: column;
+    height: auto;
+}
+/* .fondo_transparente{
+    background-color: white;
+    width: 100vw;
+    height: 100px;
+    opacity: .5;
+    position: fixed;
+    z-index: 1;
+} */
+.bienvenida{
+    text-align: center;
+    font-size: 2rem;
+    font-family: Rubik;
+    font-weight: 900;
+    opacity: 1;
+    color: white;
+}
+.cartel_bienvenida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 150px;
+    z-index: 5;
+    position: relative;
+    background-color: rgb(32, 28, 26);
+}
+
+.redes{
+    /* align-self: center; */
+}
+.icono-red{
+    color: white;
+    font-size: 40px;
+    margin: 5px;
+}
