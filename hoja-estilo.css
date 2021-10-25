@@ -98,7 +98,7 @@ main{
 .primer-parallax{
     width: 100vw;
     height: 72vh;
-    background-image: url(imagenes/enzo.webp);
+    background-image: url(imagenes/enzo.png);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
