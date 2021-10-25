@@ -8,12 +8,7 @@
 :root{
     font-size: 16px;
 }
-/* fuentes{
-    font-family: 'Arvo', serif;
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Crete Round', serif;
-    font-family: 'Prompt', sans-serif;
-} */
+
 main, header, nav, footer
 {
 	display:block;
@@ -45,7 +40,6 @@ header{
 nav{
     display: flex;
     width: 100vw;
-    /* background-color: rgb(191, 187, 194); */
     background-color: rgb(32, 28, 26);
     justify-content: space-evenly;
     box-shadow: 0 4px 4px dimgray;
@@ -54,19 +48,12 @@ nav{
 .navbar__button{
     font-size: 1.5rem;
     color: gainsboro;
-    /* background-color:gainsboro; */
     padding: 0 20px;
 }
 li{
     margin-inline: 5rem;
 }
-/* .vacio{
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-} */
+
 a{
     text-decoration: none;  
 }
@@ -81,10 +68,6 @@ main{
 }
 .main_principal{
     flex-grow: 1;
-    /* background-image: url(imagenes/enzo.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,14 +147,7 @@ h4{
     flex-direction: column;
     height: auto;
 }
-/* .fondo_transparente{
-    background-color: white;
-    width: 100vw;
-    height: 100px;
-    opacity: .5;
-    position: fixed;
-    z-index: 1;
-} */
+
 .bienvenida{
     text-align: center;
     font-size: 2rem;
