@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,28 +14,26 @@
     <!-- Iconos de Fontawesome -->
     <script src="https://kit.fontawesome.com/74ec56e05c.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header>
         <h2 class="titulo">Autos de Ferrari</h2>
         <p class="subTitulo">Todo sobre la Scuderia</p>
     </header>
     <nav>
-        <a class="navbar__button" href="index.html">Inicio</a>
+        <a class="navbar__button" href="index.html" target="_blank">Inicio</a>
         <a class="navbar__button" href="modelos.html" target="_blank">Modelos</a>
         <a class="navbar__button" href="historia.html" target="_blank">Historia</a>
-        <a class="navbar__button" href="contacto.html" target="_blank">Contacto</a>
+        <a class="navbar__button" href="contacto.html">Contacto</a>
     </nav>
-    <main id="main__principal">
-        <section class="primer-parallax">
-        </section>
-        <section>
-            <article class="cartel_bienvenida">
-                <h3 class="bienvenida">¡Bienvenido!</h3><br>
-                <p class="bienvenida">En esta página podrá encontrar información sobre modelos e historia de Ferrari</p>
-            </article>
-        </section>
-        <section class="segundo-parallax">
+    <main id="main__contacto">
+        <section class="formulario__contacto">
+            <h5 class="subTitulo__contacto">Contacto</h5>
+            <form name="formulario" action="exito.html" onsubmit="return validacion();">
+                <input type="text" id="nombre" placeholder="Nombre" required> &nbsp;
+                <input type="text" id="apellido" placeholder="Apellido" required><br><br>
+                <input type="email" id="email" placeholder="Correo Electronico">&nbsp;
+                <input type="submit" value="Enviar" />&nbsp;<input type="reset" value="Cancelar" />
+            </form>
         </section>
     </main>
     <footer>
@@ -47,7 +44,4 @@
         </section>
         <p id="derechos">Derechos Reservados @2021</p>
     </footer>
-    <script src="script.js"></script>
 </body>
-
-</html>

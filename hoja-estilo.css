@@ -25,15 +25,15 @@ header{
     width: 100vw;
     height: 100px;
     background-color: rgb(243, 23, 47);
+    justify-content: center;
     align-items: center;
 }
 .titulo{
-    align-self: center;
-    font-size: 2.5vw;
+    font-size: 2.7rem;
     color: black;
 }
 .subTitulo{
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     color: black;
 }
 
@@ -41,8 +41,10 @@ header{
 nav{
     display: flex;
     width: 100vw;
+    height: 2.5rem;
     background-color: rgb(32, 28, 26);
     justify-content: space-evenly;
+    align-items: center;
     box-shadow: 0 4px 4px dimgray;
     z-index: 5;
 }
@@ -67,7 +69,7 @@ main{
     min-height: 50%;
     flex-grow: 1;
 }
-.main_principal{
+#main__principal{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -78,6 +80,15 @@ main{
     flex-direction: row;
     width: 100%;
     padding: 1 rem;
+}
+#main__contacto{
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    background-image: url(Imagenes/Fondo-camino.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .primer-parallax{
     width: 100vw;
@@ -110,13 +121,19 @@ main{
 /*        FOOTER         */
 footer{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     align-self: flex-end;
     background-color: rgb(32, 28, 26);
     width: 100vw;
     height: 150px;
+}
+#derechos{
+    color: white;
+    font-family: Prompt;
+    font-weight: 200;
+    font-size: 0.75rem;
 }
 
 aside{
@@ -131,22 +148,23 @@ p{
     text-align: left;
     font-family: Rubik;
 }
+
 h4{
     text-align: center;
     font-size: 2rem;
 }
 
-.subTitulo__registro{
-    color: white;
-    font-family: Rubik;
-    font-size: 1.1rem;
-}
-
-.formulario__registro{
+.formulario__contacto{
     display: flex;
     /* align-self: center; */
     flex-direction: column;
     height: auto;
+}
+
+.subTitulo__contacto{
+    color: white;
+    font-family: Rubik;
+    font-size: 1.1rem;
 }
 
 .bienvenida{
