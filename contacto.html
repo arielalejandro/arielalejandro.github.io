@@ -26,13 +26,14 @@
         <a class="navbar__button" href="contacto.html">Contacto</a>
     </nav>
     <main id="main__contacto">
-        <section class="formulario__contacto">
-            <h5 class="subTitulo__contacto">Contacto</h5>
-            <form name="formulario" action="exito.html" onsubmit="return validacion();">
-                <input type="text" id="nombre" placeholder="Nombre" required> &nbsp;
-                <input type="text" id="apellido" placeholder="Apellido" required><br><br>
-                <input type="email" id="email" placeholder="Correo Electronico">&nbsp;
-                <input type="submit" value="Enviar" />&nbsp;<input type="reset" value="Cancelar" />
+        <section class="caja__contacto">
+            <h5>Contacto</h5>
+            <form class="formm" name="formulario" action="exito.html" onsubmit="return validacion();">
+                <input class="campo" type="text" id="nombre" placeholder="Nombre" required>
+                <input class="campo" type="text" id="apellido" placeholder="Apellido" required>
+                <input class="campo" type="email" id="email" placeholder="Correo Electronico">
+                <textarea class="campo" id="mensjae" cols="30" rows="12" placeholder="Escriba aquí su mensaje..."></textarea><br>
+                <input class="boton" type="submit" value="Enviar" /><input class="boton" type="reset" value="Cancelar"/>
             </form>
         </section>
     </main>
@@ -44,4 +45,5 @@
         </section>
         <p id="derechos">Derechos Reservados @2021</p>
     </footer>
+    <script src="script.js"></script>
 </body>

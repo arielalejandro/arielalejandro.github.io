@@ -83,6 +83,8 @@ main{
 }
 #main__contacto{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 80vh;
     background-image: url(Imagenes/Fondo-camino.jpg);
@@ -154,17 +156,43 @@ h4{
     font-size: 2rem;
 }
 
-.formulario__contacto{
+.caja__contacto{
+    box-sizing: border-box;
     display: flex;
-    /* align-self: center; */
     flex-direction: column;
-    height: auto;
+    align-items: center;
+    background-color: rgba(32, 28, 26,0.7);
+    border-radius: 20px;
+    background-blend-mode: darken;
 }
 
-.subTitulo__contacto{
+.caja__contacto h5{
     color: white;
+    font-family: Arvo;
+    font-size: 2rem;
+    margin: 20px;
+}
+.formm{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px 60px 60px;
+}
+.campo{
+    color: black;
     font-family: Rubik;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.boton{
+    font-family: Rubik;
+    font-size: 1.2rem;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 10px;
 }
 
 .bienvenida{
