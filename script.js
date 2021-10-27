@@ -2,7 +2,6 @@ function validacion(){
     nombre = document.getElementById('nombre').value;
     apell = document.getElementById('apellido').value;
     mail = document.getElementById('email').value;
-    /*Decidí utilizar required en los campos para evitar repetir*/
     if (!(isNaN(nombre))){
         alert('El nombre no puede ser un numero');
         nombre.value = '';
