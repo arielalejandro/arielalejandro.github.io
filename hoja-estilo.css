@@ -97,6 +97,17 @@ main{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+#main__modelos{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2rem;
+    background-image: url(Imagenes/fondo-negro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .primer-parallax{
     width: 100vw;
     height: 72vh;
@@ -194,7 +205,6 @@ aside a:hover{
     border-radius: 20px;
     background-blend-mode: darken;
 }
-
 .caja__contacto h5{
     color: white;
     font-family: Arvo;
@@ -215,15 +225,35 @@ aside a:hover{
     margin: 5px;
     border-radius: 10px;
 }
-
 .boton{
     font-family: Rubik;
+    color: gainsboro;
     font-size: 1.2rem;
     padding: 3px;
     margin: 5px;
     border-radius: 10px;
     align-self: center;
     width: 120px;
+    background-color: rgb(243, 23, 47);
+}
+
+.modelo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: lightgrey;
+    overflow: hidden;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+
+.descripcion{
+    font-weight: 600;
+    font-family: Arvo;
 }
 
 .bienvenida{
@@ -246,11 +276,16 @@ aside a:hover{
     background-color: rgb(32, 28, 26);
 }
 
-/* .redes{
-    align-self: center;
-} */
 .icono-red{
     color: white;
     font-size: 40px;
     margin: 5px;
+    -moz-transition: ease 0.5s;
+    -ms-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+.icono-red:hover{
+	font-size: 60px;
 }
