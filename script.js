@@ -12,18 +12,17 @@ function validacion(){
         apell.value = '';
         return false;
     }
-    else if(!(validarEmail(mail))){
+    else if(validarEmail(mail)){
         alert("La dirección de email es incorrecta.");
-        mail.value = '';
         return false;
     }
     return true;
 }
 
 function validarEmail(valor) {
-    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor))){
-        return false;
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor)){
+        return true;
     } 
-    return true;
+    return false;
     
 }
