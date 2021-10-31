@@ -91,11 +91,12 @@ main{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 80vh;
+    min-height: max-content;
     background-image: url(Imagenes/Fondo-camino.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 2rem;
 }
 
 #main__modelos{
@@ -305,6 +306,7 @@ aside a:hover{
     }
     nav{
         justify-content: space-evenly;
+        height: 1.4rem;
     }
     .navbar__button{
         font-size: 0.9rem;
@@ -330,6 +332,39 @@ aside a:hover{
     }
     article h4{
         font-size: 1.4rem;
+    }
+    #main__contacto{
+        padding: 0.6rem;
+    }
+    .formm{
+        margin: 0 15px 15px 15px;
+    }
+    .caja__contacto h5{
+        font-size: 1.2rem;
+    }
+    .campo{
+        font-size: 0.8rem;
+    }
+    .boton{
+        font-size: 0.8rem;
+    }
+
+
+    #main__modelos{
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .modelo{
+        flex-shrink: 2;
+        margin: 1rem auto 1rem auto;
+    }
+
+    .icono-red{
+        font-size: 1.7rem;
+    }
+    footer{
+        height: 70px;
     }
 }
 
@@ -374,5 +409,33 @@ aside a:hover{
     }
     article h4{
         font-size: 1.7rem;
+    }
+    .formm{
+        margin: 0 30px 30px 30px;
+    }
+    #main__contacto{
+        padding: 1rem;
+    }
+    .caja__contacto h5{
+        font-size: 1.4rem;
+    }
+    .campo{
+        font-size: 1rem;
+    }
+    .boton{
+        font-size: 1rem;
+    }
+
+    .modelo{
+        flex-shrink: 2;
+        width: 30vw;
+        margin: 1rem;
+    }
+
+    .icono-red{
+        font-size: 1.7rem;
+    }
+    footer{
+        height: 80px;
     }
 }
